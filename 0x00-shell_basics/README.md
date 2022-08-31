@@ -1,1 +1,1 @@
-Second task:List contents of current category
+Script that changes thr working directory to the home directory
