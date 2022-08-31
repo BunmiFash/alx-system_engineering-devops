@@ -1,1 +1,1 @@
-First task:Script that prints the absolute path name of the current working directory
+Second task:List contents of current category
