@@ -1,1 +1,1 @@
-This script changes group and owners
+This script changes file ownership
