@@ -1,1 +1,1 @@
-Display current directory contents
+This script creates a subdirectory
