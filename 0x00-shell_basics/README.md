@@ -1,1 +1,1 @@
-This script creates a subdirectory
+This script moves a filefrom one directory to another
