@@ -1,1 +1,1 @@
-This script prints allthe groups the current user is part
+This script creates new owner
