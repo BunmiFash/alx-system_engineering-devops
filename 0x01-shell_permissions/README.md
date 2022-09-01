@@ -1,1 +1,1 @@
-This script adds execute permission to all subdirectories of a directory
+This script creaes a new directory with 751 permission
