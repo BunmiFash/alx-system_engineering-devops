@@ -1,1 +1,1 @@
-This script moves a filefrom one directory to another
+This script deletes a filein a directory
