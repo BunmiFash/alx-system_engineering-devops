@@ -1,1 +1,1 @@
-This script lists all files and directories separated by commas
+This script creates a magic file
