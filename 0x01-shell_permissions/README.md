@@ -1,1 +1,1 @@
-This script changes ownership of a file
+This script plays episode 2 of star wars
