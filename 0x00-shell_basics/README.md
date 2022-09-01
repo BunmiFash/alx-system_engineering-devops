@@ -1,1 +1,1 @@
-This script lists all files even hidden ones
+This script prints the type of a file
