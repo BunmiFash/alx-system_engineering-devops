@@ -1,1 +1,1 @@
-This script creates a symbolic link to a file
+This script moves files starting with uppercase to another directory
