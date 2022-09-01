@@ -1,1 +1,1 @@
-This script sets permission for only others
+This script lists details if a file in long format
