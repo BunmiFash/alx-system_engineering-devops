@@ -1,1 +1,1 @@
-This script creates new directories within a directory
+This script lists all files and directories separated by commas
