@@ -11,3 +11,4 @@
 13. This script list words only once
 14. This script finds words and displays line where they are found
 15. This script displays number of lines that contains a particular word
+16. This script displays lines containing a word and the next 3 lines after them
