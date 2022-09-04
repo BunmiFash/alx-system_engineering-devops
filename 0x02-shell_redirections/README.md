@@ -9,3 +9,4 @@
 11. This scripts counts the number of diectories in a directory
 12. This script sorts and displays the files within a directory
 13. This script list words only once
+14. This script finds words and displays line where they are found
