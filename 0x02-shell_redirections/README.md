@@ -14,3 +14,4 @@
 16. This script displays lines containing a word and the next 3 lines after them
 17. This script displays all the lines in a file that do not contain a particular word
 18. This script displays all lines of a file starting with a letter
+19. This scripts replaces charcters with other characters
