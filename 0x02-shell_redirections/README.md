@@ -12,3 +12,4 @@
 14. This script finds words and displays line where they are found
 15. This script displays number of lines that contains a particular word
 16. This script displays lines containing a word and the next 3 lines after them
+17. This script displays all the lines in a file that do not contain a particular word
