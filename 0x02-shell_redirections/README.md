@@ -10,3 +10,4 @@
 12. This script sorts and displays the files within a directory
 13. This script list words only once
 14. This script finds words and displays line where they are found
+15. This script displays number of lines that contains a particular word
