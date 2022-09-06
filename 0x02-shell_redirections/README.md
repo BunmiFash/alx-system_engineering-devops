@@ -3,3 +3,4 @@
 5. This script displays the first 10 lines of a file.
 6. This script prints the third line of a file
 7. This script Createa a file
+8. This scripts redirects an output of a file into another
