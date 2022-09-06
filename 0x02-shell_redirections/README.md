@@ -4,3 +4,4 @@
 6. This script prints the third line of a file
 7. This script Createa a file
 8. This scripts redirects an output of a file into another
+9. This script duplicates the last line of a file
