@@ -18,3 +18,4 @@
 20. This script removes all the c's in a file
  21. This script reverses an output
 22. This script displays all users and their home directories, sorted by users.
+23. This script finds all empty files and directories
