@@ -6,3 +6,4 @@
 8. This scripts redirects an output of a file into another
 9. This script duplicates the last line of a file
 10. This script deletes all files with .js extensions as well as their subfolders
+11. This scripts counts the number of diectories in a directory
