@@ -16,3 +16,4 @@
 18. This script displays all lines of a file starting with a letter
 19. This scripts replaces charcters with other characters
 20. This script removes all the c's in a file
+ 21. This script reverses an output
