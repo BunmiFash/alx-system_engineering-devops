@@ -7,3 +7,4 @@
 9. This script duplicates the last line of a file
 10. This script deletes all files with .js extensions as well as their subfolders
 11. This scripts counts the number of diectories in a directory
+12. This script sorts and displays the files within a directory
