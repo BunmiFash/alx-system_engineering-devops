@@ -10,3 +10,4 @@ This script adds /action to the PATH
 9. This script divides two variables
 10. This script prints the exponential of two variables
 11. This script converts a number from base 2 to base 10.
+12. This script prints all possible combinations of two letters, except oo.
