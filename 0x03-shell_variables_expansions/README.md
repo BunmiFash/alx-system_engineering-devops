@@ -14,3 +14,4 @@ This script adds /action to the PATH
 13. This scripts prints a number with two decimal places
 14. This script converts a number from base 10 to base 16.
 15. This script encodes and decodes text using the rot13 encryption. Assume ASCII.
+16. This script prints every other line from the input, starting with the first line.
