@@ -12,3 +12,4 @@ This script adds /action to the PATH
 11. This script converts a number from base 2 to base 10.
 12. This script prints all possible combinations of two letters, except oo.
 13. This scripts prints a number with two decimal places
+14. This script converts a number from base 10 to base 16.
