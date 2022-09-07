@@ -5,3 +5,4 @@ This script adds /action to the PATH
 4. This script lists environment variables.
 5. This script lists all local variables and environment variables, and functions.
 6. This script creates a new local variable.
+7. This script creates a new global variable.
