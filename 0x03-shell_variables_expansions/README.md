@@ -9,3 +9,4 @@ This script adds /action to the PATH
 8. This script prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
 9. This script divides two variables
 10. This script prints the exponential of two variables
+11. This script converts a number from base 2 to base 10.
