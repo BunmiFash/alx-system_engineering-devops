@@ -15,7 +15,7 @@ do
 		echo "FizzBuzz"
 	elif ((counter % 5 == 0)); then
 		echo "Buzz"
-	elif ((counter % 3)); then
+	elif ((counter % 3 == 0)); then
 		echo "Fizz"
 	else
 		echo ${counter}
