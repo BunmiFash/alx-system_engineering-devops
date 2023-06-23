@@ -7,5 +7,5 @@ file { '/tmp/school':
   group   => 'www-data',
   owner   => 'www-data',
   content => $str,
-  mode    => '0744'
+  mode    => '0744',
 }
