@@ -1,3 +1,5 @@
+#Creating a file
+
 $str = 'I love Puppet'
 
 file { '/tmp/school':
