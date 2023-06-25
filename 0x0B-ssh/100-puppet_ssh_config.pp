@@ -1,4 +1,4 @@
-# creating a config file
+# creating a client config file
 
 file_line {'Remove passwd auth':
   ensure => 'present',
