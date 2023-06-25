@@ -1,6 +1,6 @@
 #Client-side config
 
-Host 54.236.47.112
+Host alx-server
 	HostName 54.236.47.112
 	User ubuntu
 	passwordAuthentication no
