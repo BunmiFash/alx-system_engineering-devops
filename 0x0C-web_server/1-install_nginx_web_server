@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A srcipt that installs Nginx with certain requirements
+
+sudo apt -y  update
+sudo apt -y  install nginx
+
+sudo ufw allow 'Nginx HTTP'
+sudo systemctl enable nginx
+echo "Hello World!" > /var/log/Nginx/
