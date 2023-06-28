@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# File transfer to server
 
 numParameters=$#
 filePath=$1
