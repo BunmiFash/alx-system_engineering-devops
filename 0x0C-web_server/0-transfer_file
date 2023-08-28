@@ -6,10 +6,9 @@ filePath=${1}
 ipAdrr=${2}
 name=${3}
 sshPath=${4}
-argNum=$#
 
 if [ $# -lt 3 ]; then
 	echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
 else
-	scp -o StrictHostKeyChecking=no -i ${sshPath} ${filePath} ${name}@${ipAdrr}:~/
+	scp -o StrictHostKeyChecking=no -i "${sshPath}" "${filePath}" "${name}"@"${ipAdrr}":~/
 fi

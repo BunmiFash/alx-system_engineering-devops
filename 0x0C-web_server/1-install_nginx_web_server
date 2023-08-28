@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# A script that installs Nginx and congigures it
+
+# Installing nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+# Default message configuration
+echo 'Hello World!' > /var/www/html/index.html
+
+# Configuring listening on port 80
+sudo ufw allow 'Nginx HTTP'
+
+#Restarting
+sudo service restart nginx
