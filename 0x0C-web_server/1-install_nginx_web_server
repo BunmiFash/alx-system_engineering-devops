@@ -5,10 +5,6 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 
-sudo apt install ufw
-sudo ufw allow ssh
-sudo ufw enable
-
 # Configuring listening on port 80
 sudo ufw allow 'Nginx HTTP'
 

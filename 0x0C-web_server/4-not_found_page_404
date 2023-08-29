@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# A script that installs Nginx and congigures it
+
+# Installing nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+# Configuring listening on port 80
+sudo ufw allow 'Nginx HTTP'
+
+# Default message configuration
+echo 'Hello World!' | sudo tee /var/www/html/index.html
+
+#Restarting
+sudo service nginx restart
+
+# Redirecting -- I used the escape character because '/' is a delimiter for sed command
+redir="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;"
+sudo sed -i "s/server_name _;/${redir}/" /etc/nginx/sites-available/default;
+
+# Custom error 404 page
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
+
+err404="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}"
+sudo sed -i "s/server_name _;/${err404}/" /etc/nginx/sites-enabled/default;
+
+sudo service nginx restart
