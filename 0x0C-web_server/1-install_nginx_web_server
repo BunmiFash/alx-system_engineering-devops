@@ -9,7 +9,7 @@ sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 
 # Default message configuration
-echo 'Hello World!' | tee /var/www/html/index.html
+echo 'Hello World!' | sudo tee /var/www/html/index.html
 
 #Restarting
-sudo service restart nginx
+sudo service nginx restart
