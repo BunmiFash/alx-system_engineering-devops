@@ -5,10 +5,10 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 
-# Configuring listening on port 80
+# Configuring listening on port 8``
 
 # Default message configuration
-echo 'Hello World!' | sudo tee /usr/share/nginx/html/index.html
+echo 'Hello World!' | sudo tee /var/www/html/index.html
 
 #Restarting
 sudo service nginx restart
