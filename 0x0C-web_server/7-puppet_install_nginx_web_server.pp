@@ -10,7 +10,7 @@ exec { 'install':
 }
 
 exec { 'hello':
-  command  => 'echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html',
+  command  => 'echo "Hello World!" | sudo tee /var/www/html/index.html',
   provider => shell,
 }
 
