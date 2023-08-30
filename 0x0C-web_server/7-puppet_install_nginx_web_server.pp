@@ -5,12 +5,12 @@ package { 'nginx':
 }
 
 exec { 'install':
-  command  => 'sudo apt-get update ; sudo apt-get -y install nginx',
+  command  => 'sudo apt-get -y update ; sudo apt-get -y install nginx',
   provider => shell,
 }
 
 exec { 'hello':
-  command  => 'echo "Hello World!" | sudo tee /var/www/html/index.html',
+  command  => 'echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html',
   provider => shell,
 }
 
