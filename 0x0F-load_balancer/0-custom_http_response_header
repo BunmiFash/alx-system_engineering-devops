@@ -12,18 +12,18 @@ echo 'Hello World!' | sudo tee /var/www/html/index.html
 sudo service nginx restart
 
 # Redirecting -- I used the escape character because '/' is a delimiter for sed command
-redir="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;"
-sudo sed -i "s/server_name _;/${redir}/" /etc/nginx/sites-available/default;
+#redir="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;"
+#sudo sed -i "s/server_name _;/${redir}/" /etc/nginx/sites-available/default;
 
 # Custom error 404 page
 echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
 
 # ERROR 404 HTTP HEADER RESPONSE
-err404HTTPResponse="server_name _;\n\tadd_header X-Served-By $HOSTNAME;\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}"
+err404HTTPResponse="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}"
 sudo sed -i "s/server_name _;/${err404HTTPResponse}/" /etc/nginx/sites-enabled/default
 
 # Configuring HTTP HEADER RESPONSE AND REDIRECTION
-# httpResponse="server_name _;\n\tadd_header X-Served-By $HOSTNAME\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;"
-# sudo sed -i "s/server_name _;/${httpResponse}/" /etc/nginx/sites-available/default
+httpResponse="server_name _;\n\tadd_header X-Served-By $HOSTNAME;\n\trewrite ^\/redirect_me https:\/\/github.com\/BunmiFash permanent;"
+sudo sed -i "s/server_name _;/${httpResponse}/" /etc/nginx/sites-available/default
 
 sudo service nginx restart
