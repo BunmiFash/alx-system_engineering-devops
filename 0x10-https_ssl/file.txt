@@ -1,0 +1,19 @@
+
+; <<>> DiG 9.18.12-0ubuntu0.22.04.2-Ubuntu <<>> bunmi.tech
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4718
+;; flags: qr rd ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;bunmi.tech.			IN	A
+
+;; ANSWER SECTION:
+bunmi.tech.		0	IN	A	54.173.89.51
+
+;; Query time: 0 msec
+;; SERVER: 172.20.0.1#53(172.20.0.1) (UDP)
+;; WHEN: Fri Sep 08 10:37:56 WAT 2023
+;; MSG SIZE  rcvd: 54
+
