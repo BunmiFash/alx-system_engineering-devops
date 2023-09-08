@@ -7,19 +7,14 @@
 sub_dom() {
 	sub="$2"
 	dom="$1"
-	dig "$sub"."$dom" | awk -v var="$sub" 'NR==13 {print "The subdomain " var " is a " $4 " record and points to " $NF}'
-}
-
-no_sub_dom() {
-	dom="$1"
-	dig www."$dom" | awk -v var="$sub" 'NR==13 {print "The subdomain www" " is a " $4 " record and points to " $NF}'
-	dig lb-01."$dom" | awk -v var="$sub" 'NR==13 {print "The subdomain lb-01" " is a " $4 " record and points to " $NF}'
-	dig web-01."$dom" | awk -v var="$sub" 'NR==13 {print "The subdomain web-01" " is a " $4 " record and points to " $NF}'
-	dig web-02."$dom" | awk -v var="$sub" 'NR==13 {print "The subdomain web-02" " is a " $4 " record and points to " $NF}'
+	dig "$sub"."$dom" | grep -A1 'ANSWER SECTION:' | tail -1 |awk -v var="$sub" '{print "The subdomain " var " is a " $4 " record and points to " $NF}'
 }
 
 if [ $#	-eq 2 ]; then
 	sub_dom "$1" "$2"
 elif [ $# -eq 1 ]; then
-	no_sub_dom "$1"
+	sub_dom "$1" "www"
+	sub_dom "$1" "lb-01"
+	sub_dom "$1" "web-01"
+	sub_dom "$1" "web-02"
 fi
